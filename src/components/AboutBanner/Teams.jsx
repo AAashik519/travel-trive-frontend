@@ -28,15 +28,16 @@ const Teams = () => {
     },
   ];
   return (
-    <div className="lg:w-[1200px] mx-auto my-20">
+    <div className="lg:w-[1200px] mx-auto my-20"    data-aos="fade-up"
+    data-aos-duration="3000 ">
       <div className="text-center my-5">
         <h3 className="text-xl text-red-600 font-bold italic">Team</h3>
         <h1 className="text-4xl text-blue-900 font-bold">Our Amazing Team</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {teams.map((team) => (
-          <div className="card   shadow">
+        {teams.map((team ,i) => (
+          <div className="card   shadow" key={i}>
             <img className="h-[350px]" src={team.image} alt="Shoes" />
 
             <div className="px-3 py-3">

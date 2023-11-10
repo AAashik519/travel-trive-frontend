@@ -6,18 +6,18 @@ const MyBooking = () => {
   const [bookings, setBookings] = useState([]);
   const { user, isLoading } = useAuth();
 
-  console.log(user.email);
+  // console.log(user.email);
   if(isLoading){
     return <progress className="progress w-56"></progress>
   }
-  const URL = `http://localhost:5000/bookings?email=${user.email}`;
+  const URL = `https://travel-trive-backend.vercel.app/bookings?email=${user.email}`;
 
   useEffect(() => {
     fetch(URL)
       .then((res) => res.json())
       .then((data) => {
         
-        console.log(data);
+        // console.log(data);
         setBookings(data);
       });
   }, [URL]);
@@ -36,7 +36,7 @@ const MyBooking = () => {
             <div className="mt-8">
               <ul role="list" className="-my-6 divide-y divide-gray-200">
                 {bookings.map((booking) => (
-                  <li key={booking.id} className="flex py-6">
+                  <li key={booking._id} className="flex py-6">
                     <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                       <img
                         src={booking.loadCountry.imageURL}

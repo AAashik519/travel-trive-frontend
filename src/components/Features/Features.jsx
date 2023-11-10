@@ -2,7 +2,8 @@ import React from 'react'
 import { BiSolidCity } from 'react-icons/bi';
 const Features = () => {
   return (
-    <div className='flex justify-center py-10 bg-[#e9ebee]   '>
+    <div className='flex justify-center py-10 bg-[#e9ebee]   ' data-aos="fade-up"
+    data-aos-duration="3000">
         <div className=' text-center lg:w-[1200px]  lg:mx-auto '>
             <h1 className='text-2xl font-bold text-blue-700 italic '>Browse By Category </h1>
             <h1 className='text-4xl font-bold my-4  text-[#FF3811]'>Pick A Tour Type</h1>

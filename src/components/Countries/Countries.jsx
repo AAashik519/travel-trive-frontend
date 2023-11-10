@@ -8,15 +8,16 @@ const Countries = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/countries")
+    fetch("https://travel-trive-backend.vercel.app/countries")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setCountries(data);
       });
   }, []);
   return (
-    <div className="  bg-[#e9ebee] py-20 px-5">
+    <div className="  bg-[#e9ebee] py-20 px-5" data-aos="fade-up"
+    data-aos-duration="2000">
       <div className="text-center my-10">
         <h1 className="text-xl font-bold text-red-600 italic">Tour</h1>
         <h2 className="text-3xl font-bold text-blue-950 italic ">Features Tour</h2>

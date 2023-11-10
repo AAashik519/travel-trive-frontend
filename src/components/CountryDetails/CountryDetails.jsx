@@ -8,7 +8,7 @@ const CountryDetails = () => {
   const { user } = useAuth();
   const loadCountry = useLoaderData();
   const navigate = useNavigate();
-  console.log(loadCountry);
+  // console.log(loadCountry);
   const {
     abbreviation,
     capital,
@@ -37,7 +37,7 @@ const CountryDetails = () => {
     console.log(bookings);
 
     try {
-      const res = await axios.post("http://localhost:5000/bookings", bookings, {
+      const res = await axios.post("https://travel-trive-backend.vercel.app/bookings", bookings, {
         headers: {
           "Content-Type": "application/json",
         },

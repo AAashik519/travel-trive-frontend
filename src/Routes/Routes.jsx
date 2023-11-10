@@ -43,7 +43,7 @@ import MyBooking from "../components/MyBooking/MyBooking";
         {
             path :'/countries/:id',
             element :  <PrivateRoute> <CountryDetails />,</PrivateRoute>,
-            loader :({params})=> fetch(`http://localhost:5000/countries/${params.id}`)
+            loader :({params})=> fetch(`https://travel-trive-backend.vercel.app/countries/${params.id}`)
         },
         {
             path :'/booking',

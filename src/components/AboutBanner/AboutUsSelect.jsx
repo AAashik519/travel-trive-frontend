@@ -2,7 +2,7 @@ import React from "react";
 import travel from "../../assets/travel.jpeg";
 const AboutUsSelect = () => {
   return (
-    <div className="my-20 md:w-full lg:w-[1200px] mx-auto">
+    <div className="my-32 md:w-full lg:w-[1200px] mx-auto" >
       <div className="lg:flex gap-20   ">
         <div className="flex-1">
           <img

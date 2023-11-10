@@ -2,7 +2,9 @@ import React from 'react'
 import { BsCheck } from 'react-icons/bs';
 const WhyChooses = () => {
   return (
-     <div className='bg-[#e9ebee] py-20 px-5'>
+     <div className='bg-[#e9ebee] py-20 px-5'   data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <div className=' lg:w-[1200px] mx-auto lg:flex  gap-20 '>
         <div className='flex-1 flex justify-center '>
             <img className='md:w-full lg:w-[400px] h-[400px] rounded' src="https://media.istockphoto.com/id/1083091180/photo/businesswoman-on-airport-talking-on-the-smartphone-while-walking-with-hand-luggage-in-train.jpg?s=612x612&w=0&k=20&c=1zhb9VSBhsD8FnM8krBA3sfEql24rw-zQ-ZZ_7JViL4=" alt="" />
