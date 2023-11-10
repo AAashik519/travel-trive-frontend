@@ -37,7 +37,7 @@ const Banner = () => {
     <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
     <div>
     <button className="btn bg-[#FF3811] border-none text-white mr-5 hover:btn-outline hover:text-[#FF3811] mb-5">Discover More</button>
-    <button className="btn btn-outline border-white text-white hover:text-[#FF3811]">Latest Project</button>
+    <button className="btn btn-outline border-white text-white hover:text-[#FF3811]">New Advanture</button>
     </div>
   </div>
 </div>
